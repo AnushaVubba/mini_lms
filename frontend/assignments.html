@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Assignments</h2>
+
+<div id="assignments"></div>
+
+<h3>Submit Assignment</h3>
+<input type="number" id="assignmentId" placeholder="Assignment ID">
+<textarea id="content" placeholder="Your submission"></textarea>
+<button onclick="submitAssignment()">Submit</button>
+
+<h2>My Results</h2>
+<div id="mySubmissions"></div>
+
+<button onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+<script>
+    loadAssignments();
+    loadMySubmissions();
+</script>
+
+</body>
+</html>
